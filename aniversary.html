@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <style>
+        .bg_container{
+            background-color: pink;
+            height: 100%;
+            background-size: cover;
+        }
+        .product_container{
+            background-color: white;
+            width: 240px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+        .product_img{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .logo{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        span{
+            text-decoration: line-through;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+            <a class="navbar-brand  " href="index.html">
+              <img class="logo" src="https://i.pinimg.com/564x/84/47/c5/8447c51d9da855276f4f54650ef57191.jpg"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto ">
+                    <a style="color: black; font-weight: bold;" class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a style="color: black; font-weight: bold" class="nav-link" href="#">Wishlist</a>
+                    <a style="color: black; font-weight: bold" class="nav-link" href="#">Orders</a>
+                    <a style="color: black; font-weight: bold" class="nav-link" href="event_page.html">Back</a>
+                    
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-row justify-content-around">
+                    <div class="product_container text-center mr-3">
+                        <img class="product_img" src="https://i.pinimg.com/564x/64/83/49/64834959baf0dd64aadd3c9b4470650e.jpg"/>
+                        <p class="p-2">
+                            Anniversary decoration using circle arch with lightings <br>
+                            <b>Price:699</b><br>
+                            Service charge : depends on location
+                        </p>
+                        <div class="ml-auto"> 
+                            <a href="bookNow.html" target="_blank"><button class="btn btn-primary mb-3">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-row justify-content-around">
+                    <div class="product_container text-center mr-3">
+                        <img class="product_img" src="https://i.pinimg.com/564x/27/c0/83/27c0833cdd731b1fde0e9324943352e2.jpg"/>
+                        <p class="p-2">
+                            Simple Anniversary decoration using balloons<br>
+                            <b>Price: Rs. 699</b><br>
+                            Service charge : depends on location
+                        </p>
+                        <div class="ml-auto"> 
+                            <a href="bookNow.html" target="_blank"><button class="btn btn-primary mb-3">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-row justify-content-around">
+                    <div class="product_container text-center mr-3">
+                        <img class="product_img" src="https://i.pinimg.com/564x/c6/40/69/c64069fe181c69d6ea340d61ce2be61f.jpg"/>
+                        <p class="p-2">
+                            Birthday decor using balloon ring arch <br>
+                            <b>Price : <span>1499</span> 1199</b><br>
+                            Service charge : depends on location
+                        </p>
+                        <div class="ml-auto"> 
+                            <a href="bookNow.html" target="_blank"><button class="btn btn-primary mb-3">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-row justify-content-around">
+                    <div class="product_container text-center mr-3">
+                        <img class="product_img" src="https://i.pinimg.com/564x/b9/80/a8/b980a87aa970058e9b2fbeb57284c14b.jpg"/>
+                        <p class="p-2">
+                            Birthday decor using balloons With background<br>
+                            <b>Price: package of 849</b><br>
+                            Service charge : depends on location
+                        </p>
+                        <div class="ml-auto"> 
+                            <a href="bookNow.html" target="_blank"><button class="btn btn-primary mb-3">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-row justify-content-around">
+                    <div class="product_container text-center mr-3">
+                        <img class="product_img" src="https://i.pinimg.com/564x/4d/87/ad/4d87ad49437c5d371b2fcaaab531782e.jpg"/>
+                        <p class="p-2">
+                            Birthday full room/terrace decoration <br>
+                            <b>Price : 3999</b><br>
+                            Service charge:depends on location and room size.
+                        </p>
+                        <div class="ml-auto"> 
+                            <a href="bookNow.html" target="_blank"><button class="btn btn-primary mb-3">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-row justify-content-around">
+                    <div class="product_container text-center mr-3">
+                        <img class="product_img" src="https://i.pinimg.com/564x/43/15/c8/4315c8be51201bf6438c9ae20b60e38f.jpg"/>
+                        <p class="p-2">
+                            Birthday full room/terrace decoration <br>
+                            <b>Price : 3999</b><br>
+                            Service charge:depends on location and room size.
+                        </p>
+                        <div class="ml-auto"> 
+                            <a href="bookNow.html" target="_blank"><button class="btn btn-primary mb-3">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-row justify-content-around">
+                    <div class="product_container text-center mr-3">
+                        <img class="product_img" src="
+                        https://i.pinimg.com/564x/fd/03/7f/fd037f23c32f142ca127e57bb98a92cf.jpg"/>
+                        <p class="p-2">
+                            Birthday full room/terrace decoration <br>
+                            <b>Price : 3999</b><br>
+                            Service charge:depends on location and room size.
+                        </p>
+                        <div class="ml-auto"> 
+                            <a href="bookNow.html" target="_blank"><button class="btn btn-primary mb-3">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-row justify-content-around">
+                    <div class="product_container text-center mr-3">
+                        <img class="product_img" src="
+                        https://i.pinimg.com/564x/e1/cf/83/e1cf83b868d752d987179d2a8c1385c0.jpg"/>
+                        <p class="p-2">
+                            Birthday full room/terrace decoration <br>
+                            <b>Price : 3999</b><br>
+                            Service charge:depends on location and room size.
+                        </p>
+                        <div class="ml-auto"> 
+                            <a href="bookNow.html" target="_blank"><button class="btn btn-primary mb-3">Book Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

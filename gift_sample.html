@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <style>
+        .giftPage_bg_container{
+            background-color: pink;
+            height: 100%;
+            background-size: cover;
+        }
+        .product_container{
+            background-color: white;
+            width: 240px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+        .product_img{
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+
+        .logo{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        span{
+            text-decoration: line-through;
+        }
+
+    </style>
+
+</head>
+  <body>
+    <div class="giftPage_bg_container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+            <a class="navbar-brand mr-auto  " href="index.html">
+              <img class="logo" src="https://i.pinimg.com/564x/84/47/c5/8447c51d9da855276f4f54650ef57191.jpg"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav m-auto ">
+                    <a style="color: black; font-weight: bold;" class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a style="color: black; font-weight: bold" class="nav-link" href="#">Wishlist</a>
+                    <a style="color: black; font-weight: bold" class="nav-link" href="#">Orders</a>
+                    <a style="color: black; font-weight: bold" class="nav-link" href="index.html">Back</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row" id="rowContainer">
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        let giftItem = [{
+        pId: 1,
+        img: "https://cdn.igp.com/f_auto,q_auto,t_pnopt9prodlp/products/p-personalized-birthday-pop-up-box-191964-m.jpg",
+        name: "mini popup box(10 cubes)",
+        price: 399,
+        sc: "Depends on location",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+
+    },
+    {
+        pId: 2,
+        img: "https://images-na.ssl-images-amazon.com/images/I/61EisuBjVnL.SS700.jpg",
+        name: "popup box(15cubes)",
+        price: 599,
+        sc: "Depends on location",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 3,
+        img: "https://5.imimg.com/data5/SELLER/Default/2023/3/294804041/HW/KW/IR/20639197/2-500x500.jpg",
+        name: "large popup box(25cubes)",
+        price: 750,
+        sc: "Depends on location",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 4,
+        img: "https://i.etsystatic.com/11648941/r/il/71660e/4321631376/il_1588xN.4321631376_hxey.jpg",
+        name: "mini explosion box",
+        price: 349,
+        sc: "Depends on location",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 5,
+        img: "https://i.etsystatic.com/28760947/r/il/7d7ace/3978193231/il_1588xN.3978193231_3oj1.jpg",
+        name: " explosion box",
+        price: 499,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 6,
+        img: "https://ik.imagekit.io/worthywrap/WhatsApp_Image_2023-07-12_at_12.09.53.jpg?updatedAt=1689619240240",
+        name: " explosion box",
+        price: 799,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 7,
+        img: "https://m.media-amazon.com/images/I/91-Picmgp+S._SL1500_.jpg",
+        name: "large explosion box",
+        price: 1299,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 8,
+        img: "https://ik.imagekit.io/worthywrap/WhatsApp_Image_2023-07-13_at_12.43.23_PM.jpeg?updatedAt=1689232536363",
+        name: "pull out photo box",
+        price: 299,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 9,
+        img: "https://ik.imagekit.io/worthywrap/WhatsApp_Image_2023-07-13_at_12.43.23_PM__1_.jpeg?updatedAt=1689232536359",
+        name: "pull out photo box",
+        price: 349,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 10,
+        img: "https://ik.imagekit.io/worthywrap/WhatsApp_Image_2023-07-13_at_12.43.24_PM.jpeg?updatedAt=1689232536356",
+        name: "pull out photo box",
+        price: 550,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 11,
+        img: "https://ik.imagekit.io/worthywrap/WhatsApp_Image_2023-07-13_at_12.43.24_PM__1_.jpeg?updatedAt=1689232536336",
+        name: "pull out photo box",
+        price: 629,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 12,
+        img: "https://ik.imagekit.io/worthywrap/WhatsApp_Image_2023-07-13_at_12.43.24_PM__2_.jpeg?updatedAt=1689232536294",
+        name: "large pull out photo box",
+        price: 999,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    },
+    {
+        pId: 13,
+        img: "https://ik.imagekit.io/worthywrap/WhatsApp_Image_2023-07-13_at_12.51.38_PM.jpeg?updatedAt=1689233029274",
+        name: "gift card",
+        price: 200,
+        sc: "Depends on location ",
+        SpeciaFeature: "customizable",
+        Occasion: "Birthday, Anniversary, Farewell"
+    }
+];
+
+let rowContainer = document.getElementById("rowContainer");
+
+function addToCart(){
+    
+}
+
+function displayGiftProducts(eachItem) {
+    //create a container for col
+    let giftId = "gift" + eachItem.pId;
+
+    let giftItemContainerEl = document.createElement("div");
+    giftItemContainerEl.classList.add("col-sm-12", "col-md-6", "col-lg-3", "d-flex", "flex-row", "justify-content-around");
+    giftItemContainerEl.id = giftId;
+    giftItemContainerEl.onclick = function(){
+        addToCart(giftId);
+    }
+
+    //div for product rowContainer
+    let productContainer = document.createElement("div");
+    productContainer.classList.add("product_container", "text-center", "mr-3");
+
+    //imgEl 
+    let giftImgEl = document.createElement("img");
+    giftImgEl.classList.add("product_img");
+    giftImgEl.src = eachItem.img;
+
+    //div for giftItem description
+    let descriptionContainer = document.createElement("div");
+    descriptionContainer.classList.add("p-2");
+
+    let NameEl = document.createElement("p");
+    NameEl.textContent = eachItem.name;
+
+    let br1 = document.createElement("br");
+
+    let priceEl = document.createElement("b");
+    priceEl.textContent = "Price: " + eachItem.price;
+
+    let br2 = document.createElement("br");
+
+    let scEl = document.createElement("p");
+    scEl.textContent = "Service Charge: " + eachItem.sc;
+
+    let br3 = document.createElement("br");
+
+    let occasionEl = document.createElement("p");
+    occasionEl.textContent = " Occasions: " + eachItem.Occasion;
+
+    let br4 = document.createElement("br");
+
+    let speciaFeatureEl = document.createElement("p");
+    speciaFeatureEl.textContent = eachItem.SpeciaFeature;
+
+    //booknow btn    
+    let booknowBtn = document.createElement("button");
+    booknowBtn.classList.add("btn", "btn-primary","mb-3");
+    booknowBtn.style.padding = "10px";
+    booknowBtn.style.fontSize = "18px";
+    booknowBtn.textContent = "Book Now"
+
+    //a tag for btn
+    let anchorEl = document.createElement("a");
+    anchorEl.href = "bookNow.html";
+    anchorEl.target = "_blank";
+
+    anchorEl.appendChild(booknowBtn);
+
+    
+
+    /*
+    <div class="ml-auto"> 
+        <a href="bookNow.html" target="_blank"><button class="btn btn-primary ">Book Now</button></a>
+   </div>
+    */
+
+    // now appending all the elements to the container
+
+
+    //appending description elements to its container
+    descriptionContainer.appendChild(NameEl);
+    //descriptionContainer.appendChild(br1);
+    descriptionContainer.appendChild(priceEl);
+    //descriptionContainer.appendChild(br2);
+    descriptionContainer.appendChild(scEl);
+    //descriptionContainer.appendChild(br3);
+    descriptionContainer.appendChild(occasionEl);
+    //descriptionContainer.appendChild(br4);
+    descriptionContainer.appendChild(speciaFeatureEl);
+    descriptionContainer.appendChild(anchorEl);
+
+    //appending image and descriptionContainer to productContainer
+    productContainer.appendChild(giftImgEl);
+    productContainer.appendChild(descriptionContainer);
+
+    //apending productContainer to giftItemContainerEl
+    giftItemContainerEl.appendChild(productContainer);
+
+    //appending giftItemContainerEl to rowContainer
+    rowContainer.appendChild(giftItemContainerEl);
+}
+
+for (let eachItem of giftItem) {
+    displayGiftProducts(eachItem);
+}
+    </script>
+  </body>
+</html>
